@@ -1,0 +1,5 @@
+<div>
+  <nav role="navigation">
+  <a *ngFor="let item of sideNavItems" [routerLink]="item.link" routerLinkActive="active">{{ item.title }}</a>
+</nav>
+</div>

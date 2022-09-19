@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+@use 'styles-font';
+
+@use 'theme';
+
+// TODO: 1. the header (footer) needs to run flush to the top (bottom) and sides (Done)
+body {
+    margin: 0;
+}
+
+
+.link {
+    @include theme.link();
+    text-decoration: underline;
+}

@@ -1,0 +1,13 @@
+// TODO: 5. Fixing one thing may break other things, but sometimes it has to be done (Done)
+.container {
+  // try to keep these
+  display: grid;
+  grid-template-rows: 40px 1fr 40px;
+  min-height: 100vh;
+  main {
+  // // don't  really care about the below
+  padding-left: 20px;
+  padding-right: 20px;
+  }
+
+}

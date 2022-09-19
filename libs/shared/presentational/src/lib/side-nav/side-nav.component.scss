@@ -1,0 +1,14 @@
+@use "theme";
+
+// TODO: Done 14. fix the deprecation (Done)
+a {
+  @include theme.link();
+  padding-top: theme.$unit;
+  padding-bottom: theme.$unit;
+  display: inline-block;
+  &:hover {
+    background: theme.$brand-bg;
+    color: white;
+    transition: 0.3s;
+  }
+}

@@ -1,0 +1,32 @@
+<h1>Account Summary</h1>
+<!-- TODO: Done 6. Angular ngFor, refactor, and bonus points -->
+<!-- TODO: Done 7. Accessibility, table markup, form control -->
+<div class="account-summary">
+  <section>
+    <table role="table">
+      <thead>
+        <tr>
+          <th scope="col">Account Name</th>
+          <th scope="col">Balance</th>
+          <th scope="col">
+            <label>Account Type</label>
+            <select  [formControl]="accountsFilter">
+              <option value="">None</option>
+              <option value="cad">CAD</option>
+              <option value="usd">USD</option>
+            </select>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let account of filteredAccounts; trackBy: trackById">
+          <!-- TODO: Done 8. route to detail view -->
+          <th><a class="link" (click)="goToAccountDetails(account.id)" role="link" aria-label="go to account detail">{{account.id}}</a></th>
+          <td>{{account.balance}}</td>
+          <td>{{account.currency}}</td>
+        </tr>
+      </tbody>
+     
+    </table>
+  </section>
+</div>
